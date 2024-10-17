@@ -1,0 +1,44 @@
+/*******************************************************************************
+* Copyright (C) Nordfjord EDB AS - All Rights Reserved                         *
+*                                                                              *
+* Unauthorized copying of this file, via any medium is strictly prohibited     *
+* Proprietary and confidential                                                 *
+* Written by Andreas Atakan <aca@geotales.io>, January 2022                  *
+*******************************************************************************/
+
+@charset "UTF-8";
+
+
+html, body {
+	height: 100%;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), textarea, select, button, ul, div.modal-content, a[role="button"] { border-radius: 2px !important; }
+
+main {
+	min-height: 100%;
+	margin: 0 0 -120px 0;
+	padding: 0 0 120px 0;
+}
+
+#main {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+
+
+@media (max-width: 1199.98px) {
+	/**/
+}
+
+@media (max-width: 991.98px) {
+	/**/
+}
+
+@media (max-width: 767.98px) {
+	/**/
+}
+
+@media (max-width: 575.98px) {
+	/**/
+}

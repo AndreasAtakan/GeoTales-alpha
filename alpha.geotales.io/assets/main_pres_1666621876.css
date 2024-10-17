@@ -1,0 +1,119 @@
+/*******************************************************************************
+* Copyright (C) Nordfjord EDB AS - All Rights Reserved                         *
+*                                                                              *
+* Unauthorized copying of this file, via any medium is strictly prohibited     *
+* Proprietary and confidential                                                 *
+* Written by Andreas Atakan <aca@geotales.io>, January 2022                  *
+*******************************************************************************/
+
+@charset "UTF-8";
+
+
+/* Hide arrows on type="number" input  */
+/*input[type=number] { -moz-appearance: textfield; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}*/
+
+input:not([type="radio"]):not([type="checkbox"]), textarea, select, button, ul, div.modal-content, .leaflet-bar { border-radius: 2px !important; }
+
+#main {
+	height: 100vh;
+	background-color: #e6e6e6;
+}
+
+.leaflet-tooltip { padding-top: 1px; padding-bottom: 1px; margin-top: 0; }
+.leaflet-tooltip::before { display: none; }
+.leaflet-control.leaflet-bar { opacity: 0.8; }
+.leaflet-bottom.leaflet-right, .leaflet-control-bottomcenter { z-index: 1003; }
+button#fullscreen { width: 60px; }
+.leaflet-bottom.leaflet-center .leaflet-bar.marginBottom { bottom: 48px; }
+
+#textbox {
+	position: absolute;
+	z-index: 1002;
+	top: 10px;
+	bottom: auto;
+	left: 15px;
+
+	width: auto;
+	height: auto;
+	max-height: calc(100% - 20px);
+
+	overflow-y: auto;
+	opacity: 0;
+}
+#textbox:focus { outline: none; }
+#textbox #content img { max-width: 100%; }
+#textbox #content img:hover { cursor: pointer; }
+.noBottom#textbox { bottom: auto !important; }
+
+#sceneNav {
+	position: absolute;
+	z-index: 1004;
+	bottom: 10px;
+	left: 15px;
+
+	width: 200px;
+
+	opacity: 0.8;
+}
+button#bookmarksDropdown::after { display: none; }
+
+.leaflet-control, #sceneNav {
+	-webkit-transition: opacity 0.15s;
+	-moz-transition: opacity 0.15s;
+	-ms-transition: opacity 0.15s;
+	-o-transition: opacity 0.15s;
+	transition: opacity 0.15s;
+}
+#textbox {
+	-webkit-transition: top 0.15s, bottom 0.15s;
+	-moz-transition: top 0.15s, bottom 0.15s;
+	-ms-transition: top 0.15s, bottom 0.15s;
+	-o-transition: top 0.15s, bottom 0.15s;
+	transition: top 0.15s, bottom 0.15s;
+}
+
+#map {
+	position: absolute;
+	opacity: 1;
+}
+
+
+
+@media (max-width: 1199.98px) {
+	/**/
+}
+
+@media (max-width: 991.98px) {
+	/**/
+}
+
+@media (max-width: 767.98px) {
+	/**/
+}
+
+@media (max-width: 575.98px) {
+	/**/
+}
+
+@media (max-width: 575.98px) and (min-height: 450px) {
+	#textbox {
+		left: 15px !important;
+		right: 15px !important;
+		top: auto;
+		bottom: 10px;
+		max-width: none !important;
+	}
+
+	#sceneNav {
+		width: auto;
+		left: 15px !important;
+		right: 15px !important;
+	}
+
+	#map { top: 0 !important; }
+}

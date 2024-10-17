@@ -1,0 +1,128 @@
+/*******************************************************************************
+* Copyright (C) Nordfjord EDB AS - All Rights Reserved                         *
+*                                                                              *
+* Unauthorized copying of this file, via any medium is strictly prohibited     *
+* Proprietary and confidential                                                 *
+* Written by Andreas Atakan <aca@geotales.io>, January 2022                  *
+*******************************************************************************/
+
+@charset "UTF-8";
+
+
+/* Hide arrows on type="number" input  */
+/*input[type=number] { -moz-appearance: textfield; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}*/
+/* Hide arrow-down on select  */
+/*select { -webkit-appearance: none; -moz-appearance: none; }
+select::-ms-expand { display: none; }*/
+
+input:not([type="radio"]):not([type="checkbox"]), textarea, select, button, ul, div.modal-content, label.btn, .leaflet-bar { border-radius: 2px !important; }
+
+
+.trumbowyg-box {
+	min-height: auto !important;
+	height: calc(100% - 24px) !important;
+}
+.trumbowyg-button-pane {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.leaflet-tooltip { padding-top: 1px; padding-bottom: 1px; margin-top: 0; }
+.leaflet-tooltip::before { display: none; }
+
+.leaflet-pm-toolbar .leaflet-pm-icon-marker {
+	background-image: url('user-circle-solid.svg');
+}
+.leaflet-pm-toolbar .button-container { display: inline-block; }
+.leaflet-pm-toolbar .button-container .leaflet-pm-actions-container {
+	top: 100% !important; left: 0 !important;
+}
+.leaflet-pm-toolbar { height: 34px; }
+
+
+#sceneRow { background-color: #f2f2f2; }
+#sceneRow:focus { outline: none; }
+#sceneRow #delete, #sceneRow #recapture, #sceneRow #add { color: #800000; }
+#sceneRow #delete, #sceneRow #recapture { border-color: lightgrey; }
+#sceneRow #add { border-color: grey; }
+#scenes { overflow-x: auto; }
+#scenes li {
+	border-color: rgba(0, 0, 0, 0.4);
+	background-color: #f9f9f9;
+	min-width: 150px;
+	width: 150px;
+}
+#scenes li.ui-sortable-helper { top: auto !important; }
+#scenes li.active {
+	border-color: black;
+	background-color: #fbe8d0;
+}
+#scenes li.bookmark { border-color: #ed6f45; }
+#scenes li:hover:not(.active) { cursor: pointer; }
+#scenes li #reorder { color: #999999; }
+#scenes li #reorder:hover { cursor: move; }
+#scenes li #title { z-index: 3; }
+#scenes li #num { color: grey; font-size: 10px; }
+
+#textbox {
+	position: absolute;
+	z-index: 1003;
+	top: 95px;
+	left: 10px;
+
+	height: calc(100vh - 39px - 49px - 30px);
+	width: 25%;
+
+	background-color: #f9f9f9;
+	border-radius: 3px;
+
+	display: none;
+}
+#textbox #banner {
+	width: 100%;
+	background-color: #ecf0f1;
+}
+#textbox #content {
+	width: 100%;
+	height: calc(100% - 37px);
+	min-height: 50px;
+}
+
+#mapRow { background-color: #999999; }
+#map {
+	position: absolute;
+	opacity: 1;
+}
+.snapshot#map {
+	-webkit-transition: 0.12s; -moz-transition: 0.12s; -ms-transition: 0.12s; -o-transition: 0.12s; transition: 0.12s;
+	opacity: 0.6;
+}
+
+#avatarPopup, #shapePopup { width: 300px; }
+#avatarPopup #iconChoose #icons:hover { cursor: pointer; }
+
+#basemapModal #basemaps:hover { cursor: pointer; }
+
+
+
+@media (max-width: 1199.98px) {
+	/**/
+}
+
+@media (max-width: 991.98px) {
+	/**/
+}
+
+@media (max-width: 767.98px) {
+	/**/
+}
+
+@media (max-width: 575.98px) {
+	/**/
+}

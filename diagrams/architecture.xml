@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" modified="2021-12-24T20:44:58.754Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.6.13 Chrome/89.0.4389.128 Electron/12.0.7 Safari/537.36" etag="qWAPiCFy1XRWXiRYPg8d" version="14.6.13" type="device">
+  <diagram id="wZxkrVaUQ86nm_UjQ37h" name="Page-1">
+    <mxGraphModel dx="1185" dy="693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GyZorzLMJlVARHWetu7o-4" value="Frontend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="450" y="147.5" width="90" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="GyZorzLMJlVARHWetu7o-1" value="PostgreSQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="30" y="140" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GyZorzLMJlVARHWetu7o-2" value="PHP REST-API" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="140.01" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GyZorzLMJlVARHWetu7o-3" value="NGINX" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="119.38" width="50" height="111.25" as="geometry" />
+        </mxCell>
+        <mxCell id="GyZorzLMJlVARHWetu7o-8" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" source="GyZorzLMJlVARHWetu7o-2" target="GyZorzLMJlVARHWetu7o-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="320" as="sourcePoint" />
+            <mxPoint x="420" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GyZorzLMJlVARHWetu7o-11" value="SQL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GyZorzLMJlVARHWetu7o-8" vertex="1" connectable="0">
+          <mxGeometry x="-0.2667" relative="1" as="geometry">
+            <mxPoint x="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GyZorzLMJlVARHWetu7o-16" value="" style="endArrow=classic;startArrow=classic;html=1;" parent="1" source="GyZorzLMJlVARHWetu7o-3" target="GyZorzLMJlVARHWetu7o-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="290" as="sourcePoint" />
+            <mxPoint x="430" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GyZorzLMJlVARHWetu7o-17" value="HTTP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GyZorzLMJlVARHWetu7o-16" vertex="1" connectable="0">
+          <mxGeometry x="-0.2972" y="-2" relative="1" as="geometry">
+            <mxPoint x="11" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UnzOQH-2MBTPlGcJXf3N-1" value="Discourse forum&lt;br&gt;SSO login" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="UnzOQH-2MBTPlGcJXf3N-2" value="" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="GyZorzLMJlVARHWetu7o-2" target="UnzOQH-2MBTPlGcJXf3N-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="250" as="sourcePoint" />
+            <mxPoint x="220" y="230.63" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="250" y="280" />
+              <mxPoint x="250" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UnzOQH-2MBTPlGcJXf3N-4" value="SSO&amp;nbsp;secret" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UnzOQH-2MBTPlGcJXf3N-2">
+          <mxGeometry x="-0.1917" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UnzOQH-2MBTPlGcJXf3N-5" value="Return URL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UnzOQH-2MBTPlGcJXf3N-2">
+          <mxGeometry x="0.2211" y="1" relative="1" as="geometry">
+            <mxPoint y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UnzOQH-2MBTPlGcJXf3N-3" value="" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="UnzOQH-2MBTPlGcJXf3N-1" target="GyZorzLMJlVARHWetu7o-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="250" as="sourcePoint" />
+            <mxPoint x="360" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="240" />
+              <mxPoint x="290" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UnzOQH-2MBTPlGcJXf3N-6" value="User ID" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="UnzOQH-2MBTPlGcJXf3N-3">
+          <mxGeometry x="0.3187" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
